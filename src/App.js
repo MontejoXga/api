@@ -1,6 +1,8 @@
-import './App.css';
 import axios from 'axios'
-import {useEffect, useState} from 'react'
+import {useEffect, useState} from 'react';
+import './Componentes/Style.css'
+import {Main} from './Componentes/Main';
+
 
 function App() {
 
@@ -18,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Marvel</h1>
+      <Main/>
       <div>
           { personajes.map( per=>(
 
